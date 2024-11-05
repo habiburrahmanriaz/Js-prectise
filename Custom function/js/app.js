@@ -1,0 +1,3 @@
+function customFunction() {
+  alert("Hello");
+}
