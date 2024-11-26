@@ -21,22 +21,34 @@ function addTask(item) {
   // refresh the list
   renderItem();
 
+  // save to localstorage
+  saveToLocalStorage();
+
   // remove the input value
   taskInput.value = "";
 }
+
 
 // remove task
 function removeTask(item) {
   // fine the array index
   let index = todos.indexOf(item);
   // remove the item from array 
-  todos.slice(index, 1);
+  todos.splice(index, 1);
+
+   // save to localstorage
+  saveToLocalStorage();
 
   // refresh the ul
   renderItem();
 }
 
-// render html
+// save to localstorage
+function saveToLocalStorage() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+// render html 
 function renderItem() {
   // reset the UL
   todoList.innerHTML = "";
@@ -53,4 +65,13 @@ function renderItem() {
 
   });
 }
-renderItem();
+
+// on page load
+window.onload = function () {
+  let itemsFromLocalStorage = localStorage.getItem("todos");
+  if (itemsFromLocalStorage) {
+    todos = JSON.parse(itemsFromLocalStorage);
+  }
+
+  renderItem();
+};
