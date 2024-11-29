@@ -16,11 +16,25 @@
 
 // let students = ["Jubyaer", "abudullah", "siam", 324234];
 
-let student = {
-  name: "Jhon",
-  phone: "4353453",
-  age: 18,
-};
+// let student = {
+//   name: "Jhon",
+//   phone: "4353453",
+//   age: 18,
+// };
 
-let testname = "Test var";
+// let testname = "Test var";
 
+// operator
+let a = 2;
+let b = 20;
+a += 30;
+
+// if else
+
+let userAge = 23423;
+
+if (userAge < 20) {
+  console.log(true);
+} else {
+  console.log(false);
+}
