@@ -27,13 +27,12 @@
 // operator
 let a = 2;
 let b = 20;
-a += 30;
 
 // if else
 
-let userAge = 23423;
+let userAge = 12423;
 
-if (userAge < 20) {
+if (userAge < 30) {
   console.log(true);
 } else {
   console.log(false);
