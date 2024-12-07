@@ -1,15 +1,19 @@
 // what is api
 // How api works
 
-const postApi = 'https://jsonplaceholder.typicode.com/todos/1';
+//API endpoint
+const postApi = "https://jsonplaceholder.typicode.com/posts";
 
+// fetch data
   fetch(postApi)
-    .then(function (dataFromUrl) {
-      // reseive the json data & return
-      return dataFromUrl.json();
+    .then(function (respones) {
+      // resovle the promise
+      return respones.json();
     })
-    .then(function (json) {
-      for (let index = 0; index < 10; index++) {
-      console.log(json[index]);
-      }
+    .then(function (posts) {
+      // receive the data & loop through the data 
+      posts.forEach(function (item) {
+        console.log(item.title);
+      })
+      
     });
