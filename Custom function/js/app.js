@@ -13,4 +13,5 @@ var car = {
   
 }
 
-console.log(car. Name);
+console.log(car.Name);
+customFunction();
