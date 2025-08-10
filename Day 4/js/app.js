@@ -3,10 +3,10 @@
 let userAge = 18;
 
 switch (userAge) {
-  case 1:
+  case 18:
     console.log("You are loggin");
     break;
-  case 2:
+  case 1:
     console.log("Sorry for loggin");
     break;
   default:

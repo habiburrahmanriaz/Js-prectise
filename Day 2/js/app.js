@@ -4,6 +4,6 @@ console.log(friends[0]);
 
 // for loop
 // foreach loop
-friends.forEach(function (item) {
-  console.log(item);  
+friends.forEach(function (Riaz) {
+  console.log(Riaz);  
 })
